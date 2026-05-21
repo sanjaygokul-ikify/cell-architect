@@ -5,6 +5,12 @@ Cell Architect is a Python library for generating 3D cell architectures using AI
 Current methods for generating 3D cell architectures are limited by their reliance on manual input and lack of scalability.
 ## Why it Matters
 The ability to generate accurate 3D cell architectures has significant implications for medical research and education.
+## Features
+
+- AI-powered 3D cell architecture generation
+- Modular project structure
+- Configurable workflow
+- Scalable Python architecture
 ## Architecture
 ```mermaid
 graph LR
@@ -12,22 +18,65 @@ graph LR
     B -->|Generated| C[3D Cell Architecture]
 ```
 ## Project Structure
+```text
+cell-architect/
+├── README.md
+├── CONTRIBUTING.md
+├── requirements.txt
+├── main.py
+└── src/
+    ├── __init__.py
+    ├── core.py
+    └── utils.py
 ```
- cell-architect/
-|---- README.md
-|---- CONTRIBUTING.md
-|---- requirements.txt
-|---- main.py
-|---- src/
-|       |---- __init__.py
-|       |---- core.py
-|       |---- utils.py
-```
+## Prerequisites
+
+- Python 3.9+
+- pip
+- virtual environment (recommended)
+
 ## Installation
-1. Clone the repository: `git clone https://github.com/your-username/cell-architect.git`
-2. Install the requirements: `pip install -r requirements.txt`
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/sanjaygokul-ikify/cell-architect.git
+```
+
+2. Move into the project folder:
+
+```bash
+cd cell-architect
+```
+
+3. Install the requirements:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Setup Virtual Environment
+
+### Windows
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Linux/macOS
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 ## Quick Start
-1. Run the main script: `python main.py --help`
+
+Run the main script:
+
+```bash
+python main.py --help
+```
+
+This command displays available CLI options and usage instructions.
 ## Configuration
 The library can be configured using the `config.json` file.
 ## Design Decisions
